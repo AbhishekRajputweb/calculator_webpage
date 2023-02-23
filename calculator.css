@@ -1,0 +1,84 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+}
+.main{
+    height: 700px;
+    width: 400px;
+    margin-left: 35%;
+    position: relative;
+    margin-top: 40px;
+    background-color: rgb(94, 90, 90);
+    border-radius: 20px;
+}
+
+.sd{
+    display: flex;
+    margin-left: 25px;
+    
+}
+.screen1{
+    height: 100px;
+    width: 350px;
+    margin: 50px 0px 50px 0px;
+    background-color: rgba(32, 97, 97, 0.91);
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.screen{
+    height: 100px;
+    width: 50px;
+    margin: 50px 0px 50px 0px;
+    background-color: rgba(32, 97, 97, 0.91);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+.screen2{
+    height: 100px;
+    width: 150px;
+    margin: 50px 0px 50px 0px;
+    background-color: rgba(32, 97, 97, 0.91);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 30px;
+}
+.res{
+    height: 50px;
+    width: 250px;
+    margin-left: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(32, 97, 97, 0.91);
+    font-size: 30px;
+}
+.bt{
+    height:50px;
+    width: 60px;
+    background-color: brown;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+.btn{
+    height: 55px;
+    width: 50px;
+    background-color: rgba(165, 189, 207, 0.996);
+    margin: 25px 20px 25px 30px;
+    padding-top: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+}
+.btn:hover{
+    background-color: rgba(104, 143, 176, 0.646);
+}

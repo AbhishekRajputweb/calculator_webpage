@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+         <div class="sd">
+             <input type="text" class="screen1" id="screen1" readonly >
+             
+         </div>
+        <div style="display: flex; height: 50px; width: 400px;">
+         <input type="number" id="res" class="res" readonly>
+         <button class="bt" onclick="cl()">clear</button>
+        </div>
+          <div class="btn " id="a7" onclick="a7()">7</div>
+          <div class="btn" id="a8" onclick="a8()">8</div>
+          <div class="btn" id="a9" onclick="a9()">9</div>
+          <div class="btn" id="diy" onclick="diy()">/</div>
+          <div class="btn" id="a4" onclick="a4()">4</div>
+          <div class="btn" id="a5" onclick="a5()">5</div>
+          <div class="btn" id="a6" onclick="a6()">6</div>
+          <div class="btn" id="mul" onclick="mul()">X</div>
+          <div class="btn" id="a1" onclick="a1()">1</div>
+          <div class="btn" id="a2" onclick="a2()">2</div>
+          <div class="btn" id="a3" onclick="a3()">3</div>
+          <div class="btn" id="adi" onclick="adi()">-</div>
+          <div class="btn" id="a0" onclick="a0()">0</div>
+          <div class="btn" id="dot" onclick="dot()">.</div>
+          <div class="btn" id="sub" onclick="sub()">+</div> 
+          <div class="btn" id="br" onclick="br()">=</div>
+    </div>
+
+
+
+    <script>
+
+var a="7",b="8",c="9",d="4",e="5",f="6",g="1",h="2",i="3",j="0",l="*",m="/",n="-",o="+",z;
+
+        function a7()
+        {
+            
+            document.getElementById('screen1').value+=a;
+        }
+        function a8()
+        {
+            
+            document.getElementById('screen1').value+=b;
+        }
+        function a9()
+        {
+            
+            document.getElementById('screen1').value+=c;
+        }
+        function a4()
+        {
+            
+            document.getElementById('screen1').value+=d;
+        }
+        function a5()
+        {
+            
+            document.getElementById('screen1').value+=e;
+        }
+        function a6()
+        {
+            
+            document.getElementById('screen1').value+=f;
+        }
+        function a1()
+        {
+            
+            document.getElementById('screen1').value+=g;
+        }
+        function a2()
+        {
+            
+            document.getElementById('screen1').value+=h;
+        }
+        function a3()
+        {
+            
+            document.getElementById('screen1').value+=i;
+        }
+        function a0()
+        {
+            
+            document.getElementById('screen1').value+=j;
+        }
+    
+
+        function mul()
+        {
+            
+            document.getElementById('screen1').value+=l;
+        }
+        function diy()
+        {
+            
+            document.getElementById('screen1').value+=m;
+        }
+        function adi()
+        {
+            
+            document.getElementById('screen1').value+=n;
+        }
+        function sub()
+        {
+            
+            document.getElementById('screen1').value+=o;
+        }
+        
+
+        function br()
+             {
+                z=eval(document.getElementById('screen1').value);
+            document.getElementById('res').value=z;
+             }
+        
+        function cl()
+        {
+            document.getElementById('screen1').value="0";
+            document.getElementById('res').value="0";
+        }
+    
+        
+    </script>
+</body>
+</html>
